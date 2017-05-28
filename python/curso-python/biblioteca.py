@@ -5,7 +5,6 @@ def gera_nome_convite(nome_convidado):
     parte2 = nome_convidado[posicao_inicial:posicao_final]
     return parte1 + ' ' + parte2
 
-
 def envia_convite(nome_convidado):
     print "Enviando convite para %s" %(nome_convidado)
 
