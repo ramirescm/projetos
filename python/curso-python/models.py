@@ -28,15 +28,34 @@ class Perfil(object):
     def obter_tipo_perfil(self):
         return self.__tipo
 
+    @classmethod
+    def gerar_perfis(classe, nome_arquivo):
+        arquivo = open(nome_arquivo, 'r')
+        perfis = []
+        for linha in arquivo:
+            valores = linha.split(',')
+            if(len(valores) is not 6):
+                raise Perfil_Error('Uma linha no arquivo deve ter 6 valores') #lançando Perfil_Error
+            perfis.append(classe(*valores))
+        arquivo.close()
+        return perfis
+
 class Perfil_Vip(Perfil):
     'Classe padrão para perfis de usuários VIPs'
 
-    def __init__(self, nome, telefone, empresa, peso, altura, tipo_perfil, apelido):
+    def __init__(self, nome, telefone, empresa, peso, altura, tipo_perfil, apelido = ''):
         super(Perfil_Vip, self).__init__(nome, telefone, empresa, peso, altura, tipo_perfil)
         self.apelido = apelido
 
     def obter_creditos(self):
         return super(Perfil_Vip, self).obter_curtidas() * 10
+
+class Perfil_Error(Exception):
+    def __init__(self, mensagem):
+        self.mensagem = mensagem
+
+    def __str__(self):
+        return repr(self.mensagem)
 
 class Data(object):
     'Classe padrão para formatação de datas'
