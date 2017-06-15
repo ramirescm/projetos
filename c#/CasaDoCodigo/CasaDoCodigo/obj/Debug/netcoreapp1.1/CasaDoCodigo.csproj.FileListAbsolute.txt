@@ -7,3 +7,12 @@ C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp1.
 C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp1.1\CasaDoCodigo.AssemblyInfo.cs
 C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp1.1\CasaDoCodigo.dll
 C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp1.1\CasaDoCodigo.pdb
+C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp1.1\CasaDoCodigo.deps.json
+C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp1.1\CasaDoCodigo.runtimeconfig.json
+C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp1.1\CasaDoCodigo.runtimeconfig.dev.json
+C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp1.1\CasaDoCodigo.dll
+C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\bin\Debug\netcoreapp1.1\CasaDoCodigo.pdb
+C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp1.1\CasaDoCodigo.AssemblyInfo.cs
+C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp1.1\CasaDoCodigo.dll
+C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp1.1\CasaDoCodigo.pdb
+C:\dev\projetos\c#\CasaDoCodigo\CasaDoCodigo\obj\Debug\netcoreapp1.1\CasaDoCodigo.csprojResolveAssemblyReference.cache

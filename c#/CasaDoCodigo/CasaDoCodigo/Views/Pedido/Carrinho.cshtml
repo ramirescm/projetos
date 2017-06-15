@@ -3,14 +3,17 @@
     ViewData["Title"] = "Carrinho";
 }
 
+<!-- declarar o modelo de dados da página -->
+@model CarrinhoViewModel
+
 <h3>Meu Carrinho</h3>
 
 <div class="panel panel-default">
     <div class="panel-heading">
         <div class="row">
             <div class="col-lg-6">Item</div>
-            <div class="col-lg-2">Preço unitário</div>
-            <div class="col-lg-2">Quantidade</div>
+            <div class="col-lg-2 text-center">Preço unitário</div>
+            <div class="col-lg-2 text-center">Quantidade</div>
             <div class="col-lg-2">
                 <span class="pull-right">
                     Subtotal
@@ -19,25 +22,28 @@
         </div>
     </div>
     <div class="panel-body">
-        <div class="row">
-            <div class="col-lg-3">
-                <img src="~/images/produtos/large_4.jpg" />
+        @foreach (var item in Model.Itens)
+        {
+            <div class="row row-center">
+                <div class="col-lg-3">
+                    <img src="~/images/produtos/large_@(item.Produto.Id).jpg" />
+                </div>
+                <div class="col-lg-3">@item.Produto.Nome</div>
+                <div class="col-lg-2 text-center">R$ @item.PrecoUnitario</div>
+                <div class="col-lg-2 text-center">@item.Quantidade</div>
+                <div class="col-lg-2">
+                    <span class="pull-right">R$ @item.Subtotal</span>
+                </div>
             </div>
-            <div class="col-lg-3">REST</div>
-            <div class="col-lg-2">R$ 70,00</div>
-            <div class="col-lg-2">3</div>
-            <div class="col-lg-2">
-                <span class="pull-right">R$ 210,00</span>
-            </div>
-        </div>
+        }
     </div>
     <div class="panel-footer">
         <div class="row">
-            <div class="col-lg-10">Total: 4 itens</div>
+            <div class="col-lg-10">Total: @Model.Itens.Count @(Model.Itens.Count > 1 ? "itens" : "item") </div>
             <div class="col-lg-2">
                 <span class="pull-right">
-                    R$ 210,00
-                 </span>
+                    Total: R$ @Model.Total
+                </span>
             </div>
         </div>
     </div>
