@@ -58,7 +58,6 @@ export default {
             foto: new Foto(),
             id: this.$route.params.id
         }
-
     },
 
     methods: {
